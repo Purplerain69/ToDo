@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FONT AWASOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>To do</title>
+</head>
+<body>
+    <div class="card">
+                <span class="kanji-1 kanji">承</span>
+        <span class="kanji-2 kanji">厳</span>
+        <span class="kanji-3 kanji">社</span>
+        <span class="kanji-4 kanji">会</span>
+        <div class="container">
+            <header class="header">
+                <h1>TO DO </h1>
+                <form class="form">
+                    <div class="input-card">
+                        <input type="text" placeholder="New Element" id="input" data-id="">
+                        <button type="submit" id="submit">Submit</button>
+                    </div>
+                </form>
+            </header>
+
+            <section class="elements" id="elements">
+                <template id="element-template">
+                    <div class="element">
+                       <p id="element-text"></p>
+                       <div class="elements-buttons">
+                           <i class="fa-solid fa-pen-to-square btn-edit"></i>
+                           <i class="fa-solid fa-trash btn-delete"></i>
+                       </div>
+                   </div>
+                </template>
+            </section>
+        </div>
+            <!-- kanji decoration -->
+            <!-- 人類社会のの構成員の固有の尊厳と平等で譲ることのできない権利とを承認することは -->
+    </div>
+</body>
+<script src="app.js"></script>
+</html>

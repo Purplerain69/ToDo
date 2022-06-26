@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap");
+html {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../assets/background.png");
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 450px;
+  border: 2px solid #000;
+  box-shadow: -10px -10px 5px rgba(0, 0, 0, 0.3333333333);
+  background-color: #C3A98B;
+  -webkit-animation-name: dropdown;
+          animation-name: dropdown;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+.card .container {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.card .header {
+  margin-top: 40px;
+}
+.card .header h1 {
+  text-align: center;
+}
+.card .header .form {
+  margin-top: 20px;
+}
+.card .header .form .input-card {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+}
+.card .header .form .input-card input {
+  width: 100px;
+  height: 100%;
+  flex-grow: 1;
+  text-align: center;
+  border: none;
+  border-left: solid #A9855C 2px;
+  border-top: solid #A9855C 2px;
+  border-bottom: solid #A9855C 2px;
+  border-radius: 5px 0 0 5px;
+}
+.card .header .form .input-card button {
+  padding: 0 10px;
+  font-size: 18px;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  border: solid 2px #A9855C;
+  background-color: #A9855C;
+  transition: all 0.3s ease;
+}
+.card .header .form .input-card button:hover {
+  background-color: #000;
+  color: #A9855C;
+}
+.card .elements {
+  width: 100%;
+  margin: 60px 0;
+  margin-top: 30px;
+  flex-grow: 3;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.card .elements .empty {
+  font-size: 40px;
+}
+.card .elements .element {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  padding-left: 40px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  border: solid #000 1px;
+  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.2666666667);
+  background-color: #A9855C;
+}
+.card .elements .element .btn-delete {
+  color: #7A1F1F;
+  transition: all 0.3s ease;
+}
+.card .elements .element .btn-delete:hover {
+  color: #000;
+}
+.card .elements .element .btn-edit {
+  color: #DDDDDD;
+  transition: all 0.3s ease;
+}
+.card .elements .element .btn-edit:hover {
+  color: #000;
+}
+
+@-webkit-keyframes dropdown {
+  from {
+    transform: translateY(-400px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes dropdown {
+  from {
+    transform: translateY(-400px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.kanji {
+  font-family: "Noto Serif JP";
+}
+
+.kanji-1,
+.kanji-2,
+.kanji-3,
+.kanji-4 {
+  position: absolute;
+  margin: 10px;
+  font-size: 40px;
+}
+
+.kanji-1 {
+  top: 0;
+  left: 0;
+}
+
+.kanji-2 {
+  top: 0;
+  right: 0;
+}
+
+.kanji-3 {
+  bottom: 0;
+  right: 0;
+}
+
+.kanji-4 {
+  bottom: 0;
+  left: 0;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #C3A98B;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #A9855C;
+  border: 5px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  background-color: #7A1F1F;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #000;
+}/*# sourceMappingURL=style.css.map */
